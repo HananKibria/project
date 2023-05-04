@@ -1,0 +1,339 @@
+@import url("/font/stylesheet.css");
+.player {
+	
+	border: 20px;
+	background-color: white;
+	width:fit-content;
+	height:fit-content;
+	margin-left: 4%;
+	padding: 1% 0% 0% 0%;
+	position: absolute;
+	margin-top: 37vh;
+	border-radius: 5px;
+  }
+ .insideP {
+	display: flex;
+	flex-direction: row;
+	background-color: #e3e8ea;
+	height: 35%;
+	width: relative;
+	position: relative;
+	align-items: center;
+ }
+  
+  .player__button {
+	font-size: 16px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 7px;
+	height: 60%;
+	margin: 10px;
+	border-radius: 500px;
+	color: #fff;
+	background-color: #383336 ;
+	border: none;
+	cursor: pointer;
+	width:fit-content;
+	order:0
+  }
+  
+  .player__button:hover {
+	background-color: #383336;
+  }
+
+  
+  .player__time {
+	font-size: clamp(0.75rem,1vw,1rem);
+	font-weight: normal;
+	order:1;	
+	margin-left: 10px;
+}
+  
+ .text {
+	display: table-cell;
+	border-radius: 4px;
+  }
+  
+
+  .submit{
+	width: 20%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+  }
+  
+.submit:hover {
+	background-color: #45a049;
+  }
+  
+  .MainDiv {
+	background-image: url("/bg.jpg");
+	height:100%;
+	width: 100%;
+	position: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+  }
+
+
+  .logout{
+	width: fit-content;
+	background-color: lightblue;
+	padding: 14px 20px;
+	margin-left: 90%;
+	margin-top: 2%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+  }
+.photo .photoSmall{
+	border-radius: 10px;
+}
+.landingPage:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background-image: url("/background.jpg");
+	background-size: cover;
+  }
+  
+  
+.title{
+	font-size: clamp(1rem, 2vw, 2rem);
+	font-family: 'Brother 1816';
+	font-weight: normal;
+	margin:0%;
+	margin-left: 3%;
+
+}
+.volume{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	position: absolute;
+	right: 0;
+}
+.middle{
+	display: flex;
+	flex-direction: column;
+	 /* Make the container a flexbox */
+}
+
+  .quote{
+	font-family:  'Brother 1816';
+	color: white;
+	font-size: 2em;
+	float: right;
+	width: 20%;
+	margin-right: 10%;
+	margin-top: 0;
+
+  }
+
+  .show{
+	font-family: 'Brother 1816';
+	color: white;
+	font-size: clamp(1rem, 2vw, 2rem);
+	position: absolute;
+	margin-top: 20vh;
+	margin-left: 4.25vw;
+	
+  }
+  .show2{
+	font-family: 'Brother 1816';
+	color: white;
+	font-size: clamp(1rem, 1.5vw, 1.5rem);
+	position: absolute;
+	margin-top: 25vh;
+	margin-left: 4.25vw;
+	
+  }
+  @media (max-width: 1000px) {
+	.show{
+		margin-top: 22vh;
+	}
+  }
+.buttons{
+	display: flex;
+	flex-direction: row;
+	margin-left: 10%;
+	position:relative;
+	margin-top:9rem;
+}
+@media (min-width: 900px) {
+	@media (max-width:1600px) {
+		.buttons{
+			margin-left: 6%;
+			margin-top: 2rem;
+		}
+	}
+	
+}
+.youtubeButton{
+	margin-right: 3vw;
+}
+.spotifyButton{
+	margin-right: 3vw;
+}
+.youtubeButton:hover{
+	transform: scale(1.2);
+
+}
+.spotifyButton:hover{
+	transform: scale(1.2);
+
+}
+.appleButton:hover{
+	transform: scale(1.2);
+
+}
+
+
+  @media (max-width: 1535px) {
+	.photo {
+	margin-right: 5%;
+	width: 270px;
+	height: 250px;
+	margin-top: 22%;
+	}
+	.quote{
+		margin-right: 7%;
+	}
+	
+}
+@media (max-width: 875px) {
+	.quote {
+		display: block;
+		width: 70vw;
+		margin-right: 11%;
+		margin-left: 4vw;
+		margin-top: 2vh;
+	}
+}
+@media (max-width: 950px) {
+	.photo {
+		display: none;
+	}
+	.middle{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 60vh;
+		position: relative;
+	}
+}
+@media(max-width: 950px){
+	.buttons{
+		display: none;;
+	}
+	
+}
+@media (max-width: 600px) {
+	.playIcon {
+	width: 50px;
+	height: 50px;
+	}
+	
+}
+
+@media (max-width: 1500px) {
+	.volumeIcon {
+		margin-bottom: 5%;
+	}
+}
+
+.text{
+	font-family: 'Brother 1816';
+	font-size: 1.5em;
+	width: 60%;
+	border: 0;
+	padding-left:2%;
+}
+
+.Icons{
+	display: flex;
+	flex-direction: row;
+	margin-top: 5vh;
+	margin-left: 15vw;
+}
+.apple{
+	display: flex;
+	width: 50px;
+	height: 75px;
+	padding-top: 1vh;
+}
+.apple:hover {
+	transform: scale(1.2);
+  }
+  .spotify{
+	display: flex;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin-top: 1vh;
+  }
+
+  .spotify:hover{
+	transform: scale(1.2);
+  }
+  .youtube{
+	display: flex;
+	width: 50px;
+	height: 50px;
+	padding-top: 8px;
+  }
+
+  .youtube:hover{
+	transform: scale(1.2);
+  }
+  .photoSmall{
+	display: flex;
+	width: 90vw;
+	height: 90vw;
+  }
+
+  @media (min-width: 950px) {
+	.Icons {
+	  display: none;
+	}
+	.photoSmall{
+		display: none;
+	}
+	.text{
+		width: 70vw;
+	}
+  }
+ 
+  @media(min-width:500px){
+	.Icons{
+		margin-left: 40%;
+		margin-top: 7vh;
+	}
+	@media (min-width : 400px){
+		.Icons{
+			margin-left: 30%;
+		}
+	}
+	
+  }
+  @media(max-width:500px){
+	.name{
+		display: none;
+	}
+  }
